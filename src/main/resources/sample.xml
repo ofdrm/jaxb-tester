@@ -1,0 +1,11 @@
+<!--
+  ~ Copyright 2020 salesforce.com, inc.
+  ~ All Rights Reserved
+  ~ Company Confidential
+  -->
+
+<flexipage>
+    <pageProperties>
+        <pageProperty name="a" value="b"/>
+    </pageProperties>
+</flexipage>

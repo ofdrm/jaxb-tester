@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2020 salesforce.com, inc.
+  ~ All Rights Reserved
+  ~ Company Confidential
+  -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="flexipage">
+        <xs:complexType>
+        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="pageProperties" type="pagePropertiesType" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="pagePropertiesType">
+        <xs:sequence>
+            <xs:element name="pageProperty" type="pagePropertyType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="pagePropertyType">
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+</xs:schema>
